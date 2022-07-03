@@ -6,5 +6,5 @@ import (
 
 func init() {
 	viper.AutomaticEnv()
-	viper.SetDefault("Port", "2112")
+	viper.SetDefault("Port", "3001")
 }
