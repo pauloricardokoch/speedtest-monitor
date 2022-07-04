@@ -6,6 +6,9 @@ do
 
     DBYTES=$(echo $RESULT | jq .download.bytes)
     DELAPSED=$(echo $RESULT | jq .download.elapsed)
+
+    [ -z "$DBYTES" ] continue
+
     echo Download: $(($DBYTES/$DELAPSED*8/1000))
 
     UBYTES=$(echo $RESULT | jq .upload.bytes)
