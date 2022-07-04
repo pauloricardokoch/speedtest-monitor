@@ -9,7 +9,6 @@ services:
     image: grafana/grafana
     network_mode: host
     volumes:
-      - grafana-storage:/var/lib/grafana
-
-volumes:
-  grafana-storage:
+      - ./grafana/conf/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./grafana/conf/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/dashboards:/var/lib/grafana/dashboards

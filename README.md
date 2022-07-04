@@ -1,3 +1,10 @@
+# Dependencies
+GO: https://go.dev/doc/install
+
+Docker: https://docs.docker.com/engine/install/
+
+Docker Compose: https://docs.docker.com/compose/install/
+
 # Usage
 
 ```bash
@@ -10,10 +17,14 @@ make run-collector
 make run-speedtest
 ```
 
-# Grafana conf
+# Grafana
+http://localhost:3000
+
 Default user and password are admin/admin.
-Remeber to add a new Prometheus datasource as well. Set the URL as http://localhost:9090
+You should see a datasource named Speedtest.
 
-Create a new dashboard on [grafana] and update the panel's field on the JSON Model with the data from the grafana/dash.json file. The uids for the datasources (on the dash.json file) have to be update to match the data source you created before.
+# Prometheus
+http://localhost:9090
 
-[grafana]:http://localhost:3000
+# Metrics endpoint
+http://localhost:3001

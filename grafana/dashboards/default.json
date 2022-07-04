@@ -1,9 +1,36 @@
 {
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -80,7 +107,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "expr": "histogram_quantile(0.99, sum(rate(speedtest_latency_speed_bucket[$__rate_interval])) by (le,isp))",
@@ -95,7 +122,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -147,7 +174,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -164,7 +191,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -241,7 +268,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "expr": "histogram_quantile(0.99, sum(rate(speedtest_download_speed_bucket[$__rate_interval])) by (le,isp))",
@@ -256,7 +283,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -309,7 +336,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -326,7 +353,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -403,7 +430,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "expr": "histogram_quantile(0.99, sum(rate(speedtest_upload_speed_bucket[$__rate_interval])) by (le,isp))",
@@ -418,7 +445,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "Eryl8We7z"
+        "uid": "defaultdatasource"
       },
       "fieldConfig": {
         "defaults": {
@@ -471,7 +498,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "Eryl8We7z"
+            "uid": "defaultdatasource"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -485,5 +512,21 @@
       "title": "Current",
       "type": "stat"
     }
-  ]
+  ],
+  "refresh": "5s",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Speedtest",
+  "version": 0,
+  "weekStart": ""
 }
