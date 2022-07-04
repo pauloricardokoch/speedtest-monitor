@@ -5,6 +5,8 @@ Docker: https://docs.docker.com/engine/install/
 
 Docker Compose: https://docs.docker.com/compose/install/
 
+Speedtest: https://www.speedtest.net/apps/cli
+
 # Usage
 
 ```bash
