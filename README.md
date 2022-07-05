@@ -23,7 +23,8 @@ make run-speedtest
 http://localhost:3000
 
 Default user and password are admin/admin.
-You should see a datasource named Speedtest.
+
+You should see a dashboard named Speedtest.
 
 # Prometheus
 http://localhost:9090
