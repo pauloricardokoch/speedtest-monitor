@@ -29,4 +29,4 @@ You should see a datasource named Speedtest.
 http://localhost:9090
 
 # Metrics endpoint
-http://localhost:3001
+http://localhost:3001/metrics
