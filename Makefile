@@ -10,4 +10,4 @@ run-collector:
 run-speedtest:
 	./scripts/output-speedtest-json.sh
 
-.PHONY: .setup .run-speedtest
+.PHONY: .setup .run-speedtest .run-collector
