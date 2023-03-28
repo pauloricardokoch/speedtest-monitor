@@ -43,7 +43,7 @@ var (
 		"intMacAddr",
 		"intIsVpn",
 	}
-	SpeedBuckets  = []float64{0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500}
+	SpeedBuckets  = []float64{0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 625, 650, 700, 725, 750, 800, 825, 850, 900, 925, 950, 975, 1000}
 	downloadSpeed = promauto.NewHistogramVec(
 		prometheus.HistogramOpts{
 			Name:    "speedtest_download_speed",
